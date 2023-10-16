@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using GameList.Models;
 using System.Diagnostics;
 using System.Linq;
+using Unit2Project_HarryByrd.Models;
 
 namespace GameList.Controllers
 {

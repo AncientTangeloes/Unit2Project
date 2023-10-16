@@ -25,7 +25,7 @@ namespace Unit2Project_HarryByrd.Controllers
         {
             ViewBag.Action = "Edit";
             ViewBag.Genres = context.Genres.OrderBy(g => g.Name).ToList();
-            var game = context.Gams.Find(id);
+            var game = context.Games.Find(id);
             return View("Edit", game);
         }
 
@@ -34,13 +34,13 @@ namespace Unit2Project_HarryByrd.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (game.MovieId == 0)
+                if (game.GameId == 0)
                 {
-                    context.Movies.Add(game);
+                    context.Games.Add(game);
                 }
                 else
                 {
-                    context.Movies.Update(game);
+                    context.Games.Update(game);
                 }
                 context.SaveChanges();
                 return RedirectToAction("Index", "Home");
