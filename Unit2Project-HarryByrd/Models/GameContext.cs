@@ -29,7 +29,7 @@ namespace Unit2Project_HarryByrd.Models
                 new Game
                 {
                     GameId = 1,
-                    Name = "Diablo II",
+                    Name = "Diablo II: Lord of Destruction",
                     Year = 2000,
                     Rating = 5,
                     GenreId = "F"
@@ -47,6 +47,14 @@ namespace Unit2Project_HarryByrd.Models
                     GameId = 3,
                     Name = "Payday 2",
                     Year = 2013,
+                    Rating = 5,
+                    GenreId = "A"
+                },
+                new Game
+                {
+                    GameId = 4,
+                    Name = "Delta Force: Black Hawk Down",
+                    Year = 2003,
                     Rating = 5,
                     GenreId = "A"
                 }
