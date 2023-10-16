@@ -3,10 +3,7 @@
     ViewBag.Title = "My Video Games";
 }
 
-<h2>Video Game List</h2>
-
-<a asp-controller="Game" asp-action="Add" class="btn btn-info">Add New Game</a>
-<table class="table">
+<table class="table table-info table-striped" style="color: teal">
     <thead>
         <tr>
             <th>Name</th>
@@ -34,3 +31,5 @@
         }
     </tbody>
 </table>
+<br />
+<a asp-controller="Game" asp-action="Add" class="btn btn-info">Add New Game</a>
