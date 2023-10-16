@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using GameList.Models;
+using Unit2Project_HarryByrd.Models;
 
 namespace Unit2Project_HarryByrd.Controllers
 {

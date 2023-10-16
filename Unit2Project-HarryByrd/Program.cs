@@ -1,7 +1,12 @@
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using Unit2Project_HarryByrd.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<GameContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("GameContext")));
 
 var app = builder.Build();
 
