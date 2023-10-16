@@ -25,7 +25,7 @@ namespace Unit2Project_HarryByrd.Controllers
         {
             ViewBag.Action = "Edit";
             ViewBag.Genres = context.Genres.OrderBy(g => g.Name).ToList();
-            var movie = context.Gams.Find(id);
+            var game = context.Gams.Find(id);
             return View("Edit", game);
         }
 
